@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Переменная{% endblock %}
+
+{% block body %}
+    <ul>
+    {% if my_variable == 2 %}
+        <li> Двойка </li>
+    {% else %}
+        {{ my_variable }}
+    {% endif %}
+    </ul>
+{% endblock %}

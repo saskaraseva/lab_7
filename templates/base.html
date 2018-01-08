@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'Bootstrap/css/bootstrap.css' %}">
+</head>
+<body>
+    {% block body %}{% endblock %}
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'aaa.css' %}">
+    <img src="{% static 'images/flowers.jpg' %}" alt='bs'>
+</body>
+</html>

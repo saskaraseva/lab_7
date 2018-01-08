@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <h1>Группы</h1>
+{% endblock %}
+
+{% block body %}
+    <ul>
+        {%for group in groups%}
+            <li><a href="{% url 'group' id=group.id %}">{{ group.title }}</a> </li>
+        {% empty %}
+            <li>Пустой список</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
